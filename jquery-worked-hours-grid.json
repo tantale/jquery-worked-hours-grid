@@ -1,0 +1,34 @@
+{
+  "name": "jquery-worked-hours-grid",
+  "title": "jQuery Worked Hours Grid plugin",
+  "description": "jQuery plugin used to calculate worked durations in worked hours grids.",
+  "keywords": [
+    "jquery-worked-hours-grid"
+  ],
+  "version": "0.1.0",
+  "author": {
+    "name": "Laurent LAPORTE",
+    "email": "tantale.solutions@gmail.com",
+    "url": "https://github.com/tantale"
+  },
+  "maintainers": [
+    {
+      "name": "Laurent LAPORTE",
+      "email": "tantale.solutions@gmail.com",
+      "url": "https://github.com/tantale"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://tantale.mit-license.org/"
+    }
+  ],
+  "bugs": "https://github.com/tantale/jquery-worked-hours-grid/issues",
+  "homepage": "http://github.com/tantale/jquery-worked-hours-grid",
+  "docs": "https://github.com/tantale/jquery-worked-hours-grid#readme",
+  "download": "https://github.com/tantale/jquery-worked-hours-grid/archive/master.zip",
+  "dependencies": {
+    "jquery": ">=1.4"
+  }
+}
