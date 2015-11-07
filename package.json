@@ -4,7 +4,7 @@
   "description": "jQuery plugin used to calculate worked durations in worked hours grids.",
   "author": "Laurent LAPORTE",
   "homepage": "https://github.com/tantale/jquery-worked-hours-grid/",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-cli": "~0.1.7",
