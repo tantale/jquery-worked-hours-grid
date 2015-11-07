@@ -28,14 +28,12 @@
 				seconds: "s"
 			},
 			selectors: {
-				grid: ".grid",
 				row: ".row",
 				range: ".range",
 				start: ".start",
 				end: ".end",
 				sum: ".sum",
-				total: ".total",
-				input: "input[type=time]"
+				total: ".total"
 			}
 		};
 
@@ -55,23 +53,27 @@
 
 	WorkedHoursGrid.prototype = {
 		init: function () {
-			var
-				self = this,
-				rangeInputCls = this.settings.selectors.range + " " + this.settings.selectors.input,
-				rowStartCls = this.settings.selectors.row + " " + this.settings.selectors.start;
-			this.grid.find(rangeInputCls).change(function(){
+			var self = this;
+			this.grid.find(this.settings.selectors.start).change(function(){
 				self.updateTotal($(this));
 			});
-			this.grid.find(rowStartCls).change();
+			this.grid.find(this.settings.selectors.end).change(function(){
+				self.updateTotal($(this));
+			});
+			this.refresh();
+		},
+		refresh: function () {
+			this.grid
+				.find(this.settings.selectors.row)
+				.find(this.settings.selectors.start + ":first").change();
 		},
 		updateTotal: function (input) {
 			var
 				self = this,
 				range = input.closest(this.settings.selectors.range),
 				row = range.closest(this.settings.selectors.row),
-				grid = row.closest(this.settings.selectors.grid),
 				sum = row.find(this.settings.selectors.sum),
-				total = grid.find(this.settings.selectors.total),
+				total = this.grid.find(this.settings.selectors.total),
 				rowSum = new DeltaSum(),
 				totalSum = new DeltaSum();
 
@@ -86,7 +88,7 @@
 
 			$(sum).text(rowSum.toString(this.settings.units));
 
-			grid.find(this.settings.selectors.range).each(function(index, rangeElt){
+			this.grid.find(this.settings.selectors.range).each(function(index, rangeElt){
 				var
 					myRange = $(rangeElt),
 					start = myRange.find(self.settings.selectors.start),
