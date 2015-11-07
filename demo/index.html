@@ -44,7 +44,7 @@
 		<td class="ts-sum"></td>
 	</tr>
 	<tr class="ts-row">
-		<th>Tursday</th>
+		<th>Tuesday</th>
 		<td class="ts-range">
 			<input class="ts-time ts-start" type="time" value="08:30"/> to
 			<input class="ts-time ts-end" type="time" value="12:30"/></td>
@@ -64,7 +64,7 @@
 		<td class="ts-sum"></td>
 	</tr>
 	<tr class="ts-row">
-		<th>Thirsday</th>
+		<th>Thursday</th>
 		<td class="ts-range">
 			<input class="ts-time ts-start" type="time" value="08:30"/> to
 			<input class="ts-time ts-end" type="time" value="12:30"/></td>
@@ -116,14 +116,12 @@
 	$(function() {
       $(".ts-grid").workedHoursGrid({
         selectors: {
-            	grid: ".ts-grid",
             	row: ".ts-row",
             	range: ".ts-range",
             	start: ".ts-start",
             	end: ".ts-end",
             	sum: ".ts-sum",
-            	total: ".ts-total",
-            	input: ".ts-time"
+            	total: ".ts-total"
 			}
       });
     });
