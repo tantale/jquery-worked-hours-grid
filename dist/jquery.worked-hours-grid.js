@@ -1,5 +1,5 @@
 /*
- *  jQuery Worked Hours Grid plugin - v0.2.0
+ *  jQuery Worked Hours Grid plugin - v0.3.0
  *  jQuery plugin used to calculate worked durations in worked hours grids.
  *  http://github.com/tantale/jquery-worked-hours-grid
  *
