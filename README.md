@@ -1,4 +1,4 @@
-# jQuery Worked Hours Grid plugin [![Build Status](https://secure.travis-ci.org/tantale/jquery-worked-hours-grid.png?branch=master)](https://travis-ci.org/tantale/jquery-worked-hours-grid)
+# jQuery Worked Hours Grid plugin [![Build Status](https://secure.travis-ci.org/tantale/jquery-worked-hours-grid.png?branch=master)](https://travis-ci.org/tantale/jquery-worked-hours-grid) [![Build status](https://ci.appveyor.com/api/projects/status/65l2k2dsyk764y4s/branch/master?svg=true)](https://ci.appveyor.com/project/tantale/jquery-worked-hours-grid/branch/master)
 
 jQuery plugin used to calculate worked durations in worked hours grids.
 
